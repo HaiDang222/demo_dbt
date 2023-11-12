@@ -1,0 +1,25 @@
+name: 'Hai Dang stupid'
+models:
+  - name: filename
+    +materialized: table
+  - name: a
+    columns:
+      - name: c1
+        tests:
+          - not_null
+    +materialized: table
+  - name: b
+    columns:
+      - name: c2
+        tests:
+          - not_null
+    +materialized: table
+
+sources:
+    - name: PUBLIC
+      description: This is a replica of the Postgres database used by our app
+      database: HAIDANGMB
+      schema: PUBLIC
+      tables:
+          - name: SAMPLE_BUSINESS
+            description: One record per customer.

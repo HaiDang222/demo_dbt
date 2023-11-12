@@ -1,0 +1,1 @@
+SELECT * FROM {{source("PUBLIC","SAMPLE_BUSINESS")}}
