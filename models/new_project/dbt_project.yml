@@ -22,4 +22,5 @@ sources:
       schema: PUBLIC
       tables:
           - name: SAMPLE_BUSINESS
-            description: One record per customer.
+            description: One record per customer
+
